@@ -1,7 +1,7 @@
 # CBSSports
 [![Circle CI](https://circleci.com/gh/mikeastock/cbs_sports/tree/master.svg?style=svg)](https://circleci.com/gh/mikeastock/cbs_sports/tree/master)
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/cbs_sports`. To experiment with that code, run `bin/console` for an interactive prompt.
+This gem is a Ruby wrapper around the CBSSports API
 
 ## Installation
 
@@ -21,7 +21,18 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Client
+
+When you create a client you can specify the response format you want. It defaults to JSON.
+```ruby
+client = CBSSports.client(response_format: :json)
+```
+
+### Players
+```ruby
+client.players
+=>
+```
 
 ## Development
 

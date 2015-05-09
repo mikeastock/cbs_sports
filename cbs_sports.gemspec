@@ -9,19 +9,15 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Michael Stock"]
   spec.email         = ["mikeastock@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Wrapper of CBSSports API}
+  spec.description   = %q{This gem is a Ruby wrapper around the CBSSports API}
+  spec.homepage      = "https://github.com/mikeastock/cbs_sports"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
-
-  if spec.respond_to?(:metadata)
-    spec.metadata["allowed_push_hostr"] = "TODO: Set to 'http://mygemserver.com' to prevent pushes to rubygems.org, or delete to allow pushes to any server."
-  end
 
   spec.add_dependency "activesupport"
   spec.add_dependency "hashie"

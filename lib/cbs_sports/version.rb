@@ -1,3 +1,3 @@
-module CbsSports
+module CBSSports
   VERSION = "0.1.0"
 end

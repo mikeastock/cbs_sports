@@ -1,7 +1,11 @@
-require "helper"
+require "test_helper"
 
-class TestCbsSports < Minitest::Test
+class CBSSportsTest < Minitest::Test
   def test_that_it_has_a_version_number
-    refute_nil ::CbsSports::VERSION
+    refute_nil ::CBSSports::VERSION
+  end
+
+  def test_client
+    assert_instance_of CBSSports::Client, CBSSports.client
   end
 end

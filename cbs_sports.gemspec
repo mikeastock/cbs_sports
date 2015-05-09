@@ -5,7 +5,7 @@ require "cbs_sports/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "cbs_sports"
-  spec.version       = CbsSports::VERSION
+  spec.version       = CBSSports::VERSION
   spec.authors       = ["Michael Stock"]
   spec.email         = ["mikeastock@gmail.com"]
 
@@ -23,7 +23,15 @@ Gem::Specification.new do |spec|
     spec.metadata["allowed_push_hostr"] = "TODO: Set to 'http://mygemserver.com' to prevent pushes to rubygems.org, or delete to allow pushes to any server."
   end
 
+  spec.add_dependency "activesupport"
+  spec.add_dependency "hashie"
+  spec.add_dependency "multi_xml"
+  spec.add_dependency "faraday"
+  spec.add_dependency "faraday_middleware"
+
   spec.add_development_dependency "bundler", "~> 1.9"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "minitest"
+  spec.add_development_dependency "webmock"
+  spec.add_development_dependency "pry"
 end

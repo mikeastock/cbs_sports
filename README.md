@@ -31,7 +31,7 @@ client = CBSSports.client(response_format: :json)
 ### Players
 ```ruby
 client.players
-=>
+=> { "pro_status"=>"M", "firstname"=>"Martin", "photo"=>"https://www.cbssports.com/images/players/unknown-hat-170x170.png", "position"=>"SP", "fullname"=>"Martin Agosta", "lastname"=>"Agosta", "id"=>"2044515", "age"=>24, "pro_team"=>"SF" }
 ```
 
 ## Development

@@ -19,13 +19,13 @@ module CBSSports
     end
 
     def build_response(response)
-      if json?(response)
+      if json?
         JSON.parse(response.body, object_class: Hashie::Mash)
       end
     end
 
-    def json?(response)
-      response.headers.fetch("content-type").match(/json/)
+    def json?
+      response_format == :json
     end
 
     def default_options

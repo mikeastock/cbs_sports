@@ -6,6 +6,6 @@ class CBSSportsTest < Minitest::Test
   end
 
   def test_client
-    assert_instance_of CBSSports::Client, CBSSports.client
+    assert_instance_of CBSSports::Client, CBSSports.client(sport: :baseball)
   end
 end

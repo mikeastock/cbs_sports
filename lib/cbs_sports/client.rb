@@ -8,8 +8,9 @@ module CBSSports
 
     attr_reader :response_format
 
-    def initialize(response_format: :json)
+    def initialize(response_format: :json, sport:)
       @response_format = response_format
+      @sport = sport
     end
 
     private

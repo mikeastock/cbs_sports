@@ -23,9 +23,9 @@ Or install it yourself as:
 
 ### Client
 
-When you create a client you can specify the response format you want. It defaults to JSON.
+When you create a client you can specify the response format you want. It defaults to JSON. You must also specify a sport for which you want data.
 ```ruby
-client = CBSSports.client(response_format: :json)
+client = CBSSports.client(response_format: :json, sport: :baseball)
 ```
 
 ### Players

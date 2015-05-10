@@ -2,7 +2,7 @@ require "test_helper"
 
 class CBSSports::ClientTest < Minitest::Test
   def setup
-    @client = CBSSports::Client.new(response_format: :json)
+    @client = CBSSports::Client.new(response_format: :json, sport: :baseball)
   end
 
   def test_response_type

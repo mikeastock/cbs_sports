@@ -7,8 +7,8 @@ module CBSSports
     # Alias for CBSSports::Client.new
     #
     # @return [CBSSports::Client]
-    def client(response_format: :json)
-      CBSSports::Client.new(response_format: response_format)
+    def client(response_format: :json, sport:)
+      CBSSports::Client.new(response_format: response_format, sport: sport)
     end
   end
 end

@@ -2,7 +2,7 @@ require "test_helper"
 
 class CBSSports::Client::PlayersTest < Minitest::Test
   def setup
-    @client = CBSSports::Client.new
+    @client = CBSSports::Client.new(sport: :baseball)
   end
 
   def test_players

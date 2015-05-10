@@ -1,5 +1,6 @@
 # CBSSports
 [![Circle CI](https://circleci.com/gh/mikeastock/cbs_sports/tree/master.svg?style=svg)](https://circleci.com/gh/mikeastock/cbs_sports/tree/master)
+[![Code Climate](https://codeclimate.com/github/mikeastock/cbs_sports/badges/gpa.svg)](https://codeclimate.com/github/mikeastock/cbs_sports)
 
 This gem is a Ruby wrapper around the CBSSports API
 

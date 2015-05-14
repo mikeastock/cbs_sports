@@ -6,7 +6,7 @@ module CBSSports
   class Client
     include CBSSports::Client::Players
 
-    attr_reader :response_format
+    attr_reader :response_format, :sport
 
     def initialize(response_format: :json, sport:)
       @response_format = response_format
@@ -32,7 +32,7 @@ module CBSSports
     def default_options
       {
         version: 3.0,
-        SPORT: :baseball,
+        SPORT: sport,
         response_format: response_format
       }
     end
